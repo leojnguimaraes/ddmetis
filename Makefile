@@ -6,7 +6,7 @@ SHELL = /bin/bash
 
 VPATH = src
 
-PROGRAM=./bin/ddmetis
+PROGRAM=./bin/ddmetis.exe
 
 SRC=\
 	Part_Mesh.f90\

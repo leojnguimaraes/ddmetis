@@ -1,6 +1,5 @@
-/bin/*
-/mod/*
-/obj/*
+/mod/*.mod
+/mod/*.f90
 tags
 *.exe
 *.mod
