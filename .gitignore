@@ -1,0 +1,13 @@
+/bin/*
+/mod/*
+/obj/*
+tags
+*.exe
+*.mod
+*.o
+*.out
+*.obj
+*.gdb
+fort.*
+*.res
+*.msh
