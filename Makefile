@@ -14,15 +14,16 @@ SRC=\
 	Imp_File.f90\
 	main.f90
 
-SRCDIR = ./src
-OBJDIR = ./obj
-MODDIR = ./mod
+SRCDIR    = ./src
+OBJDIR    = ./obj
+MODDIR    = ./mod
+FMETISDIR = ~/GitRepos/fmetis/build/
 
 OBJ = $(addprefix $(OBJDIR)/, $(SRC:.f90=.o))
 
 FORTRAN=ifx
-FFLAGS= -O3 -xHost -check pointers -check bounds -check format -check shape -traceback -fpe0 -init=zero -save -warn all -warn notruncated_source -warn noexternals -fpmodel=precise -assume buffered_io -ipo -fp-model fast -I ~/GitRepos/fmetis/build/include
-LIBS= -O3 -xHost -assume buffered_io -ipo -fp-model fast -L ~/GitRepos/fmetis/build/lib -lfmetis -lmetis 
+FFLAGS= -O3 -xHost -check pointers -check bounds -check format -check shape -traceback -fpe0 -init=zero -save -warn all -warn notruncated_source -warn noexternals -fpmodel=precise -assume buffered_io -ipo -fp-model fast -I $(FMETISDIR)/include
+LIBS= -O3 -xHost -assume buffered_io -ipo -fp-model fast -L $(FMETISDIR)/lib -lfmetis -lmetis 
 
 .PHONY: all
 all: start
