@@ -2,7 +2,7 @@
 
 ## Pré-requisitos:
     - Instalar o intel fortran (oneAPI):
-        - Base Toolkit: https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager
+        - (Base Toolkit)[https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager]
         - HPC Toolkit (opcional): https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager
     - Instalar a biblioteca fmetis (para compilador ifx, ver nas instruções): https://github.com/ivan-pi/fmetis
 
