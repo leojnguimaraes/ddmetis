@@ -1,11 +1,11 @@
 # DDMETIS: Domain Decompositian using Metis
 
 ## Pré-requisitos:
-    - Instalar o intel fortran (oneAPI):
-        - [Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager)
-        - [HPC Toolkit (opcional)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager)
-    - Instalar a biblioteca fmetis (para compilador ifx, ver nas instruções): 
-        - [Biblioteca fmetis](https://github.com/ivan-pi/fmetis)
+- Instalar o intel fortran (oneAPI):
+[Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager)
+[HPC Toolkit (opcional)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=aptpackagemanager)
+- Instalar a biblioteca fmetis (para compilador ifx, ver nas instruções): 
+[Biblioteca fmetis](https://github.com/ivan-pi/fmetis)
 
 ## Próximos passos:
     - Leitura dos modelo a ser particionado pelo ddmetis.dat
