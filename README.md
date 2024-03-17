@@ -7,7 +7,7 @@
 - Instalar a biblioteca fmetis (para compilador ifx, ver nas instruções): 
 [Biblioteca fmetis](https://github.com/ivan-pi/fmetis)
 - Instalar ctags:
-  - sudo apt-get -y install exuberant-ctags
+''' sudo apt-get -y install exuberant-ctags
 
 ## Próximos passos:
 - Leitura dos modelo a ser particionado pelo ddmetis.dat
