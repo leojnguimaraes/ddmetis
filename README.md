@@ -11,6 +11,15 @@
 sudo apt-get -y install exuberant-ctags
 ```
 
+## Instalação:
+
+- Editar o arquivo Makefile e indicar na variável FMETISDIR onde se instalou a biblioteca fmetis
+- No diretório raiz do projeto ddmetis, dar o comando:
+```
+make
+```
+
+
 ## Próximos passos:
 - Leitura dos modelo a ser particionado pelo ddmetis.dat
 - Colocar as subrotinas chamadas pelo main.f90 em um módulo
