@@ -15,13 +15,13 @@ SRC=\
 SRCDIR    = ./src
 OBJDIR    = ./obj
 MODDIR    = ./mod
-FMETISDIR = ~/GitRepos/fmetis/build/
+FMETISDIR = ~/home/alejo/Desktop/Datos/FMetis/fmetis/build
 
 OBJ = $(addprefix $(OBJDIR)/, $(SRC:.f=.o))
 
-FORTRAN=ifx
-FFLAGS= -O3 -xHost -check pointers -check bounds -check format -check shape -traceback -fpe0 -init=zero -save -warn all -warn notruncated_source -warn noexternals -fpmodel=precise -assume buffered_io -ipo -fp-model fast -I $(FMETISDIR)/include
-LIBS= -O3 -xHost -assume buffered_io -ipo -fp-model fast -L $(FMETISDIR)/lib -lfmetis -lmetis 
+FORTRAN=gfortan
+FFLAGS= -I $(FMETISDIR)/include 
+LIBS= -L $(FMETISDIR)/lib -lfmetis -lmetis
 
 .PHONY: all
 all: start
@@ -41,7 +41,7 @@ $(PROGRAM): $(OBJ)
 	$(FORTRAN) -o $@ $^ $(LIBS)
 
 $(OBJDIR)/%.o: %.f
-	$(FORTRAN) $(FFLAGS) -c $^ -o $@ -module $(MODDIR) -I$(MODDIR) 
+	$(FORTRAN) $(FFLAGS) -c $^ -o $@ -J$(MODDIR) 
 
 .PHONY: clean
 clean:
