@@ -15,11 +15,11 @@ SRC=\
 SRCDIR    = ./src
 OBJDIR    = ./obj
 MODDIR    = ./mod
-FMETISDIR = ~/home/alejo/Desktop/Datos/FMetis/fmetis/build
+FMETISDIR = /home/alejo/Desktop/Datos/FMetis/fmetis/build
 
 OBJ = $(addprefix $(OBJDIR)/, $(SRC:.f=.o))
 
-FORTRAN=gfortan
+FORTRAN=gfortran
 FFLAGS= -I $(FMETISDIR)/include 
 LIBS= -L $(FMETISDIR)/lib -lfmetis -lmetis
 
